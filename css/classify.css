@@ -1,0 +1,252 @@
+body,
+html {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+input {
+  outline: none;
+  -webkit-appearance: none;
+}
+.flex {
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.flex-vertical {
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.flex-space {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.flex-vertical-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flex-pack-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.flex-pack-justify {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.flex-pack-around {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+}
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.clear {
+  zoom: 1;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.font {
+  font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial, sans-serif;
+}
+.bg {
+  background: url(../bg/jd-sprites.png) no-repeat;
+  background-size: 8.88888889rem 8.88888889rem;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+.m-header {
+  position: absolute;
+  width: 100%;
+  height: 2.01481481rem;
+  background: url(../bg/calss-header-bg.png) repeat-x;
+  background-size: 0.02962963rem 2.01481481rem;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.m-header .back {
+  padding: 0.2962963rem;
+}
+.m-header .back a {
+  display: block;
+  width: 0.53333333rem;
+  height: 0.88888889rem;
+  background: url(../bg/jd-sprites.png) no-repeat;
+  background-size: 8.88888889rem 8.88888889rem;
+  background-position: -1.0962963rem 0;
+}
+.m-header .search {
+  width: 12.2962963rem;
+  height: 1.24444444rem;
+  border: 0.04444444rem solid #bfbfbf;
+  background: #fff;
+  border-radius: 0.16296296rem;
+  font-size: 0.48888889rem;
+  color: #a9a9a9;
+  text-indent: 0.9037037rem;
+}
+.m-header .menu {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url(../bg/jd-sprites.png) no-repeat;
+  background-size: 8.88888889rem 8.88888889rem;
+  background-position: -2.71111111rem 0;
+}
+.m-nav {
+  height: 0rem;
+  background: #e21b2b;
+  overflow: hidden;
+}
+.m-nav ul {
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+}
+.m-nav ul li {
+  width: 25%;
+  line-height: 2.22222222rem;
+  text-align: center;
+  font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial, sans-serif;
+  font-size: 0.59259259rem;
+  color: #fff;
+}
+.wrap {
+  margin-top: 2.01481481rem;
+  background: #f3f5f7;
+}
+.m-content {
+  overflow: hidden;
+  height: 100%;
+}
+.m-content .wrapper {
+  float: left;
+  height: 100%;
+  width: 3.28888889rem;
+}
+.m-content .classList li {
+  width: 3.28888889rem;
+  height: 2.01481481rem;
+  border: 2px solid #e5e5e5;
+  border-left: none;
+}
+.m-content .classList li:nth-of-type(1) {
+  border-top: none;
+}
+.m-content .classList a {
+  display: block;
+  font-family: PingFangSC-Regular, Helvetica, "Droid Sans", Arial, sans-serif;
+  font-size: 0.5037037rem;
+  color: #242427;
+  text-align: center;
+  line-height: 2.01481481rem;
+  background: #fff;
+}
+.m-content .classList .active {
+  color: #f94e49;
+}
+.detail {
+  float: right;
+  width: 12.66666667rem;
+  height: 100%;
+}
+.detail .productList {
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.detail .productList li {
+  margin: 0.14814815rem;
+  overflow: hidden;
+  width: 5.92592593rem;
+  background: url(../bg/loadingImg.gif) #ffffff no-repeat center center;
+  background-size: 1.18518519rem 1.18518519rem;
+}
+.detail .productList img {
+  display: block;
+  width: 5.92592593rem;
+}
+.detail .productList canvas {
+  opacity: 0;
+}
+.detail .productList p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 1.48148148rem;
+  margin: 0.14814815rem 0 0.2962963rem;
+  padding: 0 10px;
+  font-family: Helvetica;
+  font-size: 0.53333333rem;
+  line-height: 0.74074074rem;
+  color: #232326;
+}

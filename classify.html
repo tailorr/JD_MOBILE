@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>京东商品分类 - 京东商城</title>
+<link rel="stylesheet" href="css/classify.css">
+<script>
+	var scale = 1 / window.devicePixelRatio;
+	var meta = document.createElement('meta');
+	meta.setAttribute('name', "viewport");
+	meta.setAttribute('content', "user-scalable=no,initial-scale=" + scale + ",minimum-scale=" + scale + ",maximum-scale=" + scale);
+	document.head.appendChild(meta);
+
+	setRem();
+	window.addEventListener("orientationchange", setRem);
+	window.addEventListener("resize", setRem);
+	function setRem() {
+		var html = document.querySelector('html');
+		var width = html.getBoundingClientRect().width;
+		html.style.fontSize = width / 16 + "px";
+	}
+</script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+
+<script type="text/javascript" src="js/classify.js"></script>
+</head>
+
+<body>
+<header class="m-header">
+	<span class="back">
+		<a href="javascript:void(0);"></a>
+	</span>
+	<input type="text" class="search" placeholder="平板电脑超级品类日，最高直降2000！">
+	<span class="menu"></span>
+</header>
+
+<div class="wrap">
+	<nav class="m-nav">
+		<ul class="nav">
+			<li>首页</li>
+			<li>分类搜索</li>
+			<li>购物车</li>
+			<li>我的京东</li>
+		</ul>
+	</nav>
+	<div class="m-content">
+		<div class="wrapper">
+			<ul class="classList scroller">
+				<li>
+					<a class="active" href="javascript:void(0);">热门推荐</a>
+				</li>
+				<li >
+					<a href="javascript:void(0);">潮流女装</a>
+				</li>
+				<li >
+					<a href="javascript:void(0);">品牌男装</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">个护化妆</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">家用电器</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">电脑办公</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">手机数码</a>
+				</li>
+				<li >
+					<a href="javascript:void(0);">母婴童装</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">图书</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">家居家纺</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">居家生活</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">家具建材</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">食品生鲜</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">酒水饮料</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">运动户外</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">鞋靴箱包</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">奢品礼品</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">钟表珠宝</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">玩具乐器</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">内衣配饰</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">汽车用品</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">音像制品</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">医药保健</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">计生情趣</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">全球购</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">京东金融</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">生活旅行</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">宠物农资</a>
+				</li>
+			</ul>
+		</div>
+		<div class="detail">
+			<ul class="productList">
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

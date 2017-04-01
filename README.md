@@ -1,0 +1,9 @@
+## 项目介绍
+### 仿京东商城移动端，实现了主页、分类页、登录页<br/>
+- 使用原生Javascript编写<br/>
+- 使用less编译css<br/>
+- 使用rem布局<br/>
+- 使用原生Javascript编写面向对象的滑屏插件scroll.js<br/>
+- 使用ajax获取json数据模拟数据交互<br/>
+- 图片延时显示<br/>
+- 还使用了gulp完成了自动化构建<br/>

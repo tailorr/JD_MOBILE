@@ -1,0 +1,186 @@
+//CSS reset
+body,html{
+	margin: 0;
+}
+
+ul{
+	list-style:none;
+	margin:0; 
+	padding:0;
+}
+a{
+	text-decoration:none;
+}
+input{
+	outline:none;
+	-webkit-appearance:none; //消除输入框和按钮的原生外观，在iOS上加上这个属性才能给按钮和输入框自定义样式 。
+}
+//common
+@import url(public.less);
+@rem:67.5rem;
+
+.fl{
+	float:left;
+}
+.fr{
+	float: right;
+}
+.font{
+	font-family: PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;
+}
+.bg{
+	background:url(../bg/jd-sprites.png) no-repeat;
+	background-size:600/@rem 600/@rem;
+}
+
+//
+html,body{
+	height:100%;
+	overflow:hidden;
+}
+
+.m-header{
+	position:absolute;
+	width:100%;
+	height:136/@rem;
+	background:url(../bg/calss-header-bg.png) repeat-x;
+	background-size: 2/@rem 136/@rem;
+	display:inline-flex;
+	justify-content:space-around;
+	align-items:center;
+	.back{
+		padding:20/@rem;
+		a{
+			display:block;
+			width:36/@rem;
+			height:60/@rem;
+			.bg;
+			background-position:-74/@rem 0;
+		}
+	}
+	.search{
+		width:830/@rem;
+		height:84/@rem;
+		border:3/@rem solid #bfbfbf;
+		background:#fff;
+		border-radius:11/@rem;
+		font-size:33/@rem;
+		color:#a9a9a9;
+		text-indent:61/@rem;
+	}
+	.menu{
+		display:block;
+		width:54/@rem;
+		height:54/@rem;
+		.bg;
+		background-position:-183/@rem 0;
+	}
+}
+.m-nav{
+	height:0/@rem;
+	background:rgb(226, 27, 43);
+	overflow:hidden;
+	ul{
+		display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+		display: -moz-box; /* 老版本语法: Firefox (buggy) */
+		display: -ms-flexbox; /* 混合版本语法: IE 10 */
+		display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+		display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: justify;
+		justify-content: space-around;
+		li{
+			width:25%;
+			line-height:150/@rem;
+			text-align:center;
+			.font;
+			font-size:40/@rem;
+			color:#fff;
+		}
+	}
+}
+.wrap{
+	margin-top: 136/@rem;
+	background:#f3f5f7;
+}
+.m-content{
+	overflow:hidden;
+	height:100%;
+	.wrapper{
+		.fl;
+		height:100%;
+		width:222/@rem;
+	}
+	.classList{
+		li{
+			width:222/@rem;
+			height:136/@rem;
+			border:2px solid #e5e5e5;
+			border-left:none;
+		}
+
+		li:nth-of-type(1){
+			border-top:none;
+		}
+
+		a{
+			display:block;
+			.font;
+			font-size:34/@rem;
+			color:#242427;
+			text-align:center;
+			line-height:136/@rem;
+			background:#fff;
+		}
+		.active{
+			color:#f94e49;
+		}
+	}
+
+}
+
+.detail{
+	.fr;
+	width: 855/@rem;
+	height:100%;
+	.productList{
+		.flex;
+		.flex-pack-around;
+		.flex-wrap;
+		li{
+			margin:10/@rem;
+			overflow:hidden;
+			width: 400/@rem;
+			background:url(../bg/loadingImg.gif) #fff no-repeat center center;
+			background-size:80/@rem 80/@rem;
+		}
+		img{
+			display:block;
+			width:400/@rem;
+		}
+
+		canvas{
+			opacity:0;
+		}
+		p{
+			display: -webkit-box;
+			-webkit-line-clamp:2;
+			-webkit-box-orient: vertical;  //多行省略号
+			overflow: hidden;
+			height:100/@rem;
+			margin:10/@rem 0 20/@rem;
+			padding:0 10px;
+			font-family: Helvetica;
+			font-size:36/@rem;
+			line-height:50/@rem;
+
+			// overflow:hidden;
+			// white-space:nowrap;
+			// text-overflow:ellipsis;
+			// -webkit-text-overflow:ellipsis;  //单行省略号
+			color:#232326;
+		}
+	}
+}
